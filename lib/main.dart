@@ -1,4 +1,4 @@
-import 'package:actividad_1/screens/home_screen.dart';
+import 'package:actividad_1/screens/game_screen_1.dart';
 import 'package:flutter/material.dart';
 
 

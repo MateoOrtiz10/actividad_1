@@ -6,10 +6,19 @@ class GameScreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    final ButtonStyle flatButtonStyle = TextButton.styleFrom(
+      backgroundColor: Colors.amber,
+      primary: Colors.black, 
+      minimumSize: Size(290, 40),
+      padding: EdgeInsets.symmetric(horizontal: 16.0),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(2.0))
+      ),
+    );
 
     return Scaffold(
         body: Container(     
-                  padding: EdgeInsets.symmetric(horizontal: 27),
+                  padding: EdgeInsets.symmetric(horizontal: 17),
                   alignment:Alignment.center,                                
                   color: Color.fromARGB(255, 2, 2, 34),         
 
@@ -47,11 +56,28 @@ class GameScreen2 extends StatelessWidget {
                             children: [                              
                               Image.asset('assets/image-3.png'),
                               SizedBox(width: 15),
-                              Text('Andre Worthwick', style: TextStyle(color: Colors.white)),                                                                                             
-                            ] 
-                            
+                              Text('Andre Worthwick', style: TextStyle(color: Colors.white)),                                                                                                                                                         
+                            ]                             
                     ),
-                    
+
+                    Column(
+                      mainAxisSize: MainAxisSize.min,                      
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 10),
+                        Text('Rutrum faucibus phasellus elit sed viverra. Et amet quam pellentesque quis scelerisque sed.', style: TextStyle(color: Colors.white, fontSize: 13)),
+                        SizedBox(height: 5),
+                        Text('More Reviews', style: TextStyle(color: Colors.yellow, fontSize: 13))
+                      ],
+                    ),
+                  SizedBox(height: 10),
+
+                TextButton(
+                  style: flatButtonStyle,
+                  onPressed: (){}, 
+                  child: Text('Write a Review')
+                  )
+
               ]
           )  
         )  

@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Actividad 1',
-      home: GameScreen2()
+      home: GameScreen3()
       
     );
   }

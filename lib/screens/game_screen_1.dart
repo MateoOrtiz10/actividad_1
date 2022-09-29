@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 
-class GameScreen1 extends StatefulWidget {
+class GameScreen1 extends StatelessWidget {
   const GameScreen1({super.key});
-
-  @override
-  State<GameScreen1> createState() => _GameScreen1State();
-}
-
-
-class _GameScreen1State extends State<GameScreen1> {
+  
   @override
   Widget build(BuildContext context) {
   
@@ -16,8 +10,7 @@ class _GameScreen1State extends State<GameScreen1> {
               body: Container(
                 padding: EdgeInsets.symmetric(horizontal: 27),  
                   alignment:Alignment.center,                
-                  decoration: BoxDecoration(
-                  color: Colors.white,
+                  decoration: BoxDecoration(                  
                   image: DecorationImage(
                   image: AssetImage('assets/image-4.png'),
                   fit: BoxFit.cover,                 

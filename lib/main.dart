@@ -1,4 +1,4 @@
-import 'package:actividad_1/screens/game_screen_1.dart';
+import 'package:actividad_1/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Actividad 1',
-      home: GameScreen1()
+      home: GameScreen2()
       
     );
   }
